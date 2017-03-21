@@ -1,0 +1,136 @@
+body{
+	overflow: hidden;
+}
+.svgwrap{
+	width: 100vw;
+	height: 100vh;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+svg{
+	width:100%;
+	height: 100%;
+}
+@keyframes lineone{
+	0%{
+		transform: translate(30vw,0px);
+
+	}
+	100%{
+		transform: translate(-80vw,0px);
+	}
+}
+@keyframes linetwo{
+	0%{
+		transform: translateX(-40vw);
+	}
+	100%{
+		transform: translateX(80vw);
+	}
+}
+
+@keyframes linethree{
+	0%{
+		transform: translateX(-30vw);
+	}
+	100%{
+		transform: translateX(80vw);
+	}
+}
+
+@keyframes linefour{
+	0%{
+		transform: translateX(-70vw);
+	}
+	100%{
+		transform: translateX(70vw);
+	}
+}
+@keyframes rotate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+#wheel{
+	animation: rotate 10s infinite linear;
+	transform-origin: 50% 50%; 
+}
+#Car_4{
+	transform: translateX(50vw);
+	animation: lineone 7s infinite linear; 
+}
+#Car_1{
+	transform: translateX(-40vw);
+	animation: linetwo 7s infinite linear; 
+}
+#Car_2{
+	transform: translateX(-30vw);
+	animation: linethree 7s infinite linear; 
+}
+#Car_3{
+	transform: translateX(80vw);
+	animation: linefour 9s infinite linear; 
+}
+@keyframes sc{
+	0%{
+		transform: scale(1,1);
+		opacity: 1;
+	}
+	50%{
+		transform: scale(0,0);
+		opacity: 0.2;
+	}
+	100%{
+		transform: scale(1,1);
+		opacity: 1;
+	}
+}
+@keyframes sc1{
+	0%{
+		transform: scale(1,1);
+		opacity: 1;
+	}
+	50%{
+		transform: scale(0.3,0.3);
+		opacity: 0.5;
+	}
+	100%{
+		transform: scale(1,1);
+		opacity: 1;
+	}
+}
+/*@keyframes sd{
+	0%{
+		transform: scale(1,1);
+	}
+	100%{
+		transform: scale(0.2,0.2);
+	}
+}
+*/.scale{
+	animation:sc 2s 1 linear;
+	transform-origin: 8% 89%;
+}
+.scale2{
+	animation: sc 2s 1 linear;
+	transform-origin: 100% 100%;
+}
+/*.sd{
+	animation: sd 1s linear;
+	transform-origin:50% 50%;
+}
+.su{
+	animation: sd 1s reverse;
+	transform-origin: 50% 50%;
+}*/
+#name,#dept{
+	fill: #fff;
+	stroke: #fff;
+}
+circle.cls-4{
+	animation: sc1 3s 1s infinite linear;
+	transform-origin: 50% 50%;
+}
