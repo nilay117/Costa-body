@@ -137,41 +137,41 @@ circle.cls-4{
 
 
 #Rocket{
-	transform: translateY(-50vw);
+	transform: translateY(70vh);
 	animation: trailone 5s infinite linear; 
 }
 #Rocket_2{
-	transform: translateY(40vw);
+	transform: translateY(20vh);
 	animation: trailtwo 5s infinite linear; 
 }
 #Rocket_3{
-	transform: translateY(-80vw);
-	animation: trailthree 5s infinite linear; 
+	transform: translateY(-50vh);
+	animation: trailthree 5s infinite .7s linear; 
 }
 
 @keyframes trailone{
 	0%{
-		transform: translateY(200vh);
+		transform: translateY(20vh);
 	}
 	100%{
-		transform: translateY(-180vh);
+		transform: translateY(-100vh);
 	}
 }
 @keyframes trailtwo{
 	0%{
-		transform: translateY(120vh);
+		transform: translateY(70vh);
 
 	}
 	100%{
-		transform: translateY(-80vw);
+		transform: translateY(-200vh);
 	}
 }
 @keyframes trailthree{
 	0%{
-		transform: translateY(80vh);
+		transform: translateY(100vh);
 	}
 	100%{
-		transform: translateY(-120vh);
+		transform: translateY(-100vh);
 	}
 }
 
