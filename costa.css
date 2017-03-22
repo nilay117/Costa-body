@@ -154,7 +154,7 @@ circle.cls-4{
 		transform: translateY(20vh);
 	}
 	100%{
-		transform: translateY(-100vh);
+		transform: translateY(-140vh);
 	}
 }
 @keyframes trailtwo{
@@ -173,5 +173,33 @@ circle.cls-4{
 	100%{
 		transform: translateY(-100vh);
 	}
+}
+
+@keyframes cloudone{
+	from{
+		transform : translateX(-13vw);
+	}
+	to{
+		transform: translateX(55vw);
+	}
+}
+
+@keyframes cloudtwo{
+	from{
+		transform : translateX(-48vw);
+	}
+	to{
+		transform: translateX(20vw);
+
+	}
+}
+
+#Cloud1{
+	transform: translateX(-13vw);
+	animation: cloudone 100s linear 25s infinite;
+}
+#Cloud2{
+	transform: translateX(-48vw);
+	animation: cloudtwo 100s linear infinite;
 }
 
