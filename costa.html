@@ -140,9 +140,11 @@ num="27" x="140.78" y="416.83" width="30.02" height="9.47"></rect></g><g id="Clo
 		if(c == 37)
 		{
 			if(index != 0)
-			{
+			{	
+				tilt();
 				halo();
 				halo2();
+				
 				index--;
 				setcosta(index);
 			}
@@ -150,17 +152,21 @@ num="27" x="140.78" y="416.83" width="30.02" height="9.47"></rect></g><g id="Clo
 		else if(c == 39)
 		{
 			if(index!=9)
-			{
+			{	
+				tilt();
 				halo();
 				halo2();
+				
 				index++;
 				setcosta(index)
 			}
 		}
 		else if(c>=49 && c<=57)
-		{
+		{	
+			tilt();
 			halo();
 			halo2();
+			
 			index = c - 49;
 			setcosta(index);
 		}
@@ -184,6 +190,14 @@ num="27" x="140.78" y="416.83" width="30.02" height="9.47"></rect></g><g id="Clo
    			$("#halo2").addClass("scale2");
    			setTimeout(function(){
    				$("#halo2").removeClass("scale2");
+   			},2000)
+   		}
+
+   		function tilt(){
+   			
+   			$("#BB8-2").addClass("tilt");
+   			setTimeout(function(){
+   				$("#BB8-2").removeClass("tilt");
    			},2000)
    		}
 

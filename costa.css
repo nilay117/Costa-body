@@ -118,6 +118,26 @@ svg{
 	animation: sc 2s 1 linear;
 	transform-origin: 100% 100%;
 }
+
+@keyframes tilt{
+	0%{
+		transform: rotate(0deg);
+
+	}
+	50%{
+		transform: rotate(20deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+
+.tilt{
+	animation: tilt 2s 1 linear;
+	transform-origin: 70% 80% ;
+}
+
+
 /*.sd{
 	animation: sd 1s linear;
 	transform-origin:50% 50%;
