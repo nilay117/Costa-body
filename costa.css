@@ -118,6 +118,26 @@ svg{
 	animation: sc 2s 1 linear;
 	transform-origin: 100% 100%;
 }
+
+@keyframes tilt{
+	0%{
+		transform: rotate(0deg);
+
+	}
+	50%{
+		transform: rotate(20deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+
+.tilt{
+	animation: tilt 2s 1 linear;
+	transform-origin: 70% 80% ;
+}
+
+
 /*.sd{
 	animation: sd 1s linear;
 	transform-origin:50% 50%;
@@ -134,3 +154,72 @@ circle.cls-4{
 	animation: sc1 3s 1s infinite linear;
 	transform-origin: 50% 50%;
 }
+
+
+#Rocket{
+	transform: translateY(70vh);
+	animation: trailone 5s infinite linear; 
+}
+#Rocket_2{
+	transform: translateY(20vh);
+	animation: trailtwo 5s infinite linear; 
+}
+#Rocket_3{
+	transform: translateY(-50vh);
+	animation: trailthree 5s infinite .7s linear; 
+}
+
+@keyframes trailone{
+	0%{
+		transform: translateY(20vh);
+	}
+	100%{
+		transform: translateY(-140vh);
+	}
+}
+@keyframes trailtwo{
+	0%{
+		transform: translateY(70vh);
+
+	}
+	100%{
+		transform: translateY(-200vh);
+	}
+}
+@keyframes trailthree{
+	0%{
+		transform: translateY(100vh);
+	}
+	100%{
+		transform: translateY(-100vh);
+	}
+}
+
+@keyframes cloudone{
+	from{
+		transform : translateX(-13vw);
+	}
+	to{
+		transform: translateX(55vw);
+	}
+}
+
+@keyframes cloudtwo{
+	from{
+		transform : translateX(-48vw);
+	}
+	to{
+		transform: translateX(20vw);
+
+	}
+}
+
+#Cloud1{
+	transform: translateX(-13vw);
+	animation: cloudone 100s linear 25s infinite;
+}
+#Cloud2{
+	transform: translateX(-48vw);
+	animation: cloudtwo 100s linear infinite;
+}
+
